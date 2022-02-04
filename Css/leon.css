@@ -5,6 +5,7 @@
     --section-padding: 60px;
     --section-background: #f6f6f6;
     --main-duration: 0.5s;
+    --line-height: 1.6
 }
 /* End Variables*/
 /* Start Global Rules*/
@@ -231,7 +232,7 @@ body {
 .services .services-content .srv .text p {
     color: #333;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: var(----line-height);
 }
 .services .services-content .image {
     text-align: center;
@@ -282,7 +283,7 @@ body {
 }
 .portfolio .portfolio-content .card .info p {
     color: #777;
-    line-height: 1.6;
+    line-height: var(----line-height);
     margin-bottom: 0;
 }
 /* End portfolio */
