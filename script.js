@@ -10,7 +10,13 @@
 let links = document.querySelector(".links");
 let navbar = document.querySelector(".navbar");
 let navbarIcon = document.querySelector(".icon");
+
+let checkbox = document.querySelector(".checkbox");
 // variables
 links.addEventListener("click", () => {
   links.classList.toggle("active");
+});
+
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
 });

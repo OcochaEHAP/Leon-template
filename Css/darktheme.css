@@ -1,0 +1,50 @@
+/* variables  */
+:root {
+  /* add dark theme */
+  --royal-blue-dark: #000e48ff;
+  --xiketic: #171217ff;
+  --lemon-meringue: #f4e8c1ff;
+  --opal: #a0c1b9ff;
+  --midnight-green-eagle-green: #004052ff;
+  /* get it from colors. */
+}
+/* variables  */
+/* header  */
+.header .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.header .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--xiketic);
+  border-radius: 1.2em;
+  width: 50px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+  margin-left: calc(100% - 180px);
+}
+.header .label .moon {
+  color: #f1c40f !important ;
+}
+.header .label .sun {
+  color: #f39c12 !important ;
+}
+.header .label .boll {
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  transition: 0.3s ease;
+}
+.header .checkbox:checked + .label .boll {
+  transform: translateX(24px);
+}
+/* header  */

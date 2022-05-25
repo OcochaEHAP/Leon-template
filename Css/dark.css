@@ -1,0 +1,136 @@
+/* variables */
+:root {
+  /* add dark theme */
+  --royal-blue-dark: #000e48ff;
+  --xiketic: #171217;
+  --lemon-meringue: #f4e8c1ff;
+  --opal: #a0c1b9ff;
+  --midnight-green-eagle-green: #004052ff;
+  --dark-jungle-green: #002029ff;
+  /* get it from colors. */
+}
+
+body.dark .special-heading {
+  color: var(--xiketic);
+}
+
+body.dark .special-heading + p {
+  color: var(--opal);
+}
+
+body.dark .header {
+  background: -webkit-gradient(linear, left top, right top, from(var(--xiketic)), to(var(--royal-blue-dark)));
+  background: linear-gradient(to right, var(--xiketic), var(--royal-blue-dark));
+}
+
+body.dark .header .links .navbar {
+  background-color: var(--opal);
+}
+
+body.dark .header .links .navbar::before {
+  border-bottom-color: var(--opal);
+}
+
+body.dark .header .links .navbar a {
+  color: var(--lemon-meringue);
+}
+
+body.dark .header .links .navbar a:hover {
+  background-color: var(--dark-jungle-green);
+}
+
+body.dark .header .links .navbar a::before {
+  color: var(--midnight-green-eagle-green);
+}
+
+body.dark .landing {
+  background: url(/Images/landing-02.jpg) center;
+}
+
+body.dark .landing .intro-text h1 {
+  color: var(--midnight-green-eagle-green);
+}
+
+body.dark .landing .intro-text p {
+  color: var(--lemon-meringue);
+}
+
+body.dark .features {
+  background: -webkit-gradient(linear, right top, left top, from(var(--opal)), color-stop(var(--xiketic)), to(var(--royal-blue-dark)));
+  background: linear-gradient(to left, var(--opal), var(--xiketic), var(--royal-blue-dark));
+}
+
+body.dark .features .feat {
+  background-color: transparent;
+}
+
+body.dark .features .feat:hover {
+  background-color: var(--dark-jungle-green);
+}
+
+body.dark .features .feat::after, body.dark .features .feat::before {
+  color: var(--midnight-green-eagle-green);
+}
+
+body.dark .features .feat i {
+  color: var(--opal) !important;
+}
+
+body.dark .features .feat h3,
+body.dark .features .feat p {
+  color: var(--lemon-meringue);
+}
+
+body.dark .services {
+  background: -webkit-gradient(linear, left top, right top, from(var(--xiketic)), color-stop(var(--royal-blue-dark)), to(var(--midnight-green-eagle-green)));
+  background: linear-gradient(to right, var(--xiketic), var(--royal-blue-dark), var(--midnight-green-eagle-green));
+}
+
+body.dark .services .srv i {
+  color: var(--opal);
+}
+
+body.dark .services .srv h3,
+body.dark .services .srv p {
+  color: var(--lemon-meringue) !important;
+}
+
+body.dark .services .srv:hover {
+  background-color: var(--dark-jungle-green) !important;
+}
+
+body.dark .portfolio {
+  background: -webkit-gradient(linear, left top, right top, from(var(--royal-blue-dark)), color-stop(var(--dark-jungle-green)), to(var(--xiketic)));
+  background: linear-gradient(to right, var(--royal-blue-dark), var(--dark-jungle-green), var(--xiketic));
+}
+
+body.dark .portfolio .card {
+  background-color: transparent;
+}
+
+body.dark .portfolio .card:hover {
+  background-color: var(--dark-jungle-green);
+}
+
+body.dark .about {
+  background: -webkit-gradient(linear, left top, right top, from(var(--royal-blue-dark)), color-stop(var(--dark-jungle-green)), to(var(--opal)));
+  background: linear-gradient(to right, var(--royal-blue-dark), var(--dark-jungle-green), var(--opal));
+}
+
+body.dark .about .text {
+  color: var(--lemon-meringue);
+}
+
+body.dark .about .text p:last-of-type {
+  color: var(--lemon-meringue);
+}
+
+body.dark .contact {
+  background: -webkit-gradient(linear, left top, right top, from(var(--royal-blue-dark)), color-stop(var(--midnight-green-eagle-green)), color-stop(var(--opal)), to(var(--xiketic)));
+  background: linear-gradient(to right, var(--royal-blue-dark), var(--midnight-green-eagle-green), var(--opal), var(--xiketic));
+}
+
+body.dark .footer {
+  background-color: var(--xiketic);
+}
+/*# sourceMappingURL=dark.css.map */

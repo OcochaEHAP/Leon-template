@@ -1,0 +1,140 @@
+/* variables */
+:root {
+  /* add dark theme */
+  --royal-blue-dark: #000e48ff;
+  --xiketic: #171217;
+  --lemon-meringue: #f4e8c1ff;
+  --opal: #a0c1b9ff;
+  --midnight-green-eagle-green: #004052ff;
+  --dark-jungle-green: #002029ff;
+  /* get it from colors. */
+}
+body.dark {
+  .special-heading {
+    color: var(--xiketic);
+  }
+  .special-heading + p {
+    color: var(--opal);
+  }
+  .header {
+    background: linear-gradient(
+      to right,
+      var(--xiketic),
+      var(--royal-blue-dark)
+    );
+    .links {
+      .navbar {
+        background-color: var(--opal);
+        &::before {
+          border-bottom-color: var(--opal);
+        }
+        a {
+          color: var(--lemon-meringue);
+          &:hover {
+            background-color: var(--dark-jungle-green);
+          }
+          &::before {
+            color: var(--midnight-green-eagle-green);
+          }
+        }
+      }
+    }
+  }
+  .landing {
+    background: url(/Images/landing-02.jpg) center;
+    .intro-text {
+      h1 {
+        color: var(--midnight-green-eagle-green);
+      }
+      p {
+        color: var(--lemon-meringue);
+      }
+    }
+  }
+  .features {
+    background: linear-gradient(
+      to left,
+      var(--opal),
+      var(--xiketic),
+      var(--royal-blue-dark)
+    );
+    .feat {
+      background-color: transparent;
+      &:hover {
+        background-color: var(--dark-jungle-green);
+      }
+      &::after,
+      &::before {
+        color: var(--midnight-green-eagle-green);
+      }
+      i {
+        color: var(--opal) !important;
+      }
+      h3,
+      p {
+        color: var(--lemon-meringue);
+      }
+    }
+  }
+  .services {
+    background: linear-gradient(
+      to right,
+      var(--xiketic),
+      var(--royal-blue-dark),
+      var(--midnight-green-eagle-green)
+    );
+    .srv {
+      i {
+        color: var(--opal);
+      }
+      h3,
+      p {
+        color: var(--lemon-meringue) !important;
+      }
+      &:hover {
+        background-color: var(--dark-jungle-green) !important;
+      }
+    }
+  }
+  .portfolio {
+    background: linear-gradient(
+      to right,
+      var(--royal-blue-dark),
+      var(--dark-jungle-green),
+      var(--xiketic)
+    );
+    .card {
+      background-color: transparent;
+      &:hover {
+        background-color: var(--dark-jungle-green);
+      }
+      //don't forget to figure out the imgs issue
+    }
+  }
+  .about {
+    background: linear-gradient(
+      to right,
+      var(--royal-blue-dark),
+      var(--dark-jungle-green),
+      var(--opal)
+    );
+    .text {
+      color: var(--lemon-meringue);
+      p:last-of-type {
+        color: var(--lemon-meringue);
+      }
+    }
+  }
+  .contact {
+    background: linear-gradient(
+      to right,
+      var(--royal-blue-dark),
+      var(--midnight-green-eagle-green),
+      var(--opal),
+      var(--xiketic)
+    );
+  }
+  .footer {
+    background-color: var(--xiketic);
+  }
+}

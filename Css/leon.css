@@ -129,7 +129,7 @@ body {
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent #f6f6f6 transparent;
-  position: relative;
+  position: absolute;
   right: 5px;
   top: -20px;
 }
@@ -190,7 +190,6 @@ body {
   font-size: 50px;
   color: var(--main-color);
   transition: var(--transition-duration);
-  animation: color-changing 5s infinite;
 }
 .landing .intro-text p {
   font-size: 19px;
@@ -255,6 +254,11 @@ body {
 }
 /*End Features*/
 /*Start Services*/
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
 .services .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -524,16 +528,3 @@ body {
   color: var(--main-color);
 }
 /*End footer*/
-/* animation  */
-@keyframes color-changing {
-  0% {
-    color: var(--main-color);
-  }
-  50% {
-    color: rgb(80, 214, 255);
-  }
-  100% {
-    color: var(--secodry-color);
-  }
-}
-/* animation  */
